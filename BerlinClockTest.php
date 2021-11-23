@@ -6,13 +6,13 @@ require 'BerlinClock.php';
 
 class BerlinClockTest extends TestCase{
 
-    public function testMinutesSimpleReturn1(){
+    public function testMinutesSimpleGiven1ReturnYOOO(){
         //arrange
         $BerlinClock = new BerlinClock();
         // Act
-        $actual = $BerlinClock->minutesSimple();
+        $actual = $BerlinClock->minutesSimple("1");
         //Assert
-        $this->assertEquals( "1",$actual);
+        $this->assertEquals( "YOOO",$actual);
     }
 
 
