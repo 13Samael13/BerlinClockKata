@@ -15,5 +15,13 @@ class BerlinClockTest extends TestCase{
         $this->assertEquals( "YOOO",$actual);
     }
 
+    public function testSimpleHeureGiven1ReturnRRRR(){
+        //Arrange
+
+        //Act
+
+        //Assert
+}
+
 
 }
