@@ -26,10 +26,10 @@
         }
 
         public function heureSimple(string $nbHeures) : string {
-            if($nbHeures % 5 == "4") return "RRRR";
-            if($nbHeures % 5 == "3") return "RRR0";
-            if($nbHeures % 5 == "2") return "RR00";
-            if($nbHeures % 5 == "1") return "R000";
+            if($nbHeures % 5 == "4") return "RRRR";//24-19
+            if($nbHeures % 5 == "3") return "RRR0";//18-13
+            if($nbHeures % 5 == "2") return "RR00";//12-7
+            if($nbHeures % 5 == "1") return "R000";//6-0
             return "0000";
         }
 
