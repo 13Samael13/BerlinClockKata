@@ -33,4 +33,12 @@
             return "0000";
         }
 
+        public function bloc5Heure(string $nbHeures) : string{
+            if($nbHeures >= "20") return "RRRR";
+            if($nbHeures >= "15") return "RRRO";
+            if($nbHeures >= "10") return "RROO";
+            if($nbHeures >= "5") return "ROOO";
+            return "OOOO";
+        }
+
     }
