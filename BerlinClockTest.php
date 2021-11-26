@@ -23,6 +23,14 @@ class BerlinClockTest extends TestCase{
         $this->assertEquals( "YYOO",$actual);
     }
 
+    public function testMinutesSimpleGiven3ShouldReturnYYYO(){
+        $BerlinClock = new BerlinClock();
+
+        $actual = $this->actSimpleMinutes("3");
+
+        $this->assertEquals("YYYO", $actual);
+    }
+
     public function testBloc5MGiven5ShouldReturnYOOOOOOOOOOO(){
         //Arrange
         $BerlinClock= new BerlinClock();
