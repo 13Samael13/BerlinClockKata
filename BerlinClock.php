@@ -10,27 +10,27 @@
         }
 
         public function blocDe5Min(string $nbMinutes) : string{
-            if($nbMinutes >= "60") return "00000000000";
+            if($nbMinutes >= "60") return "OOOOOOOOOOO";
             if($nbMinutes >= "55") return "YYRYYRYYRYY";
-            if($nbMinutes >= "50") return "YYRYYRYYRY0";
-            if($nbMinutes >= "45") return "YYRYYRYYR00";
-            if($nbMinutes >= "40") return "YYRYYRYY000";
-            if($nbMinutes >= "35") return "YYRYYRY0000";
-            if($nbMinutes >= "30") return "YYRYYR00000";
-            if($nbMinutes >= "25") return "YYRYY000000";
-            if($nbMinutes >= "20") return "YYRY0000000";
-            if($nbMinutes >= "15") return "YYR00000000";
-            if($nbMinutes >= "10") return "YY000000000";
-            if($nbMinutes >= "5") return "Y0000000000";
-            return "00000000000";
+            if($nbMinutes >= "50") return "YYRYYRYYRYO";
+            if($nbMinutes >= "45") return "YYRYYRYYROO";
+            if($nbMinutes >= "40") return "YYRYYRYYOOO";
+            if($nbMinutes >= "35") return "YYRYYRYOOOO";
+            if($nbMinutes >= "30") return "YYRYYROOOOO";
+            if($nbMinutes >= "25") return "YYRYYOOOOOO";
+            if($nbMinutes >= "20") return "YYRYOOOOOOO";
+            if($nbMinutes >= "15") return "YYROOOOOOOO";
+            if($nbMinutes >= "10") return "YYOOOOOOOOO";
+            if($nbMinutes >= "5" ) return "YOOOOOOOOOO";
+            return "OOOOOOOOOOO";
         }
 
         public function heureSimple(string $nbHeures) : string {
             if($nbHeures % 5 == "4") return "RRRR";
-            if($nbHeures % 5 == "3") return "RRR0";
-            if($nbHeures % 5 == "2") return "RR00";
-            if($nbHeures % 5 == "1") return "R000";
-            return "0000";
+            if($nbHeures % 5 == "3") return "RRRO";
+            if($nbHeures % 5 == "2") return "RROO";
+            if($nbHeures % 5 == "1") return "ROOO";
+            return "OOOO";
         }
 
         public function bloc5Heures(string $nbHeures) : string{

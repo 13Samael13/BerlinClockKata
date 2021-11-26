@@ -23,38 +23,38 @@ class BerlinClockTest extends TestCase{
         $this->assertEquals( "YYOO",$actual);
     }
 
-    public function testBloc5MGiven5ShouldReturnY0000000000(){
+    public function testBloc5MGiven5ShouldReturnYOOOOOOOOOOO(){
         //Arrange
         $BerlinClock= new BerlinClock();
         //Act
         $actual = $BerlinClock->blocDe5Min("5");
         //Assert
-        $this->assertEquals("Y0000000000",$actual);
+        $this->assertEquals("YOOOOOOOOOO",$actual);
     }
 
-    public function testBloc5MGiven7ShouldReturnY0000000000(){
+    public function testBloc5MGiven7ShouldReturnYOOOOOOOOOO(){
         //Arrange
         $BerlinClock= new BerlinClock();
         //Act
         $actual = $BerlinClock->blocDe5Min("7");
         //Assert
-        $this->assertEquals("Y0000000000",$actual);
+        $this->assertEquals("YOOOOOOOOOO",$actual);
     }
-    public function testBloc5MGiven13ShouldReturnYY000000000(){
+    public function testBloc5MGiven13ShouldReturnYYOOOOOOOOO(){
         //Arrange
         $BerlinClock= new BerlinClock();
         //Act
         $actual = $BerlinClock->blocDe5Min("13");
         //Assert
-        $this->assertEquals("YY000000000",$actual);
+        $this->assertEquals("YYOOOOOOOOO",$actual);
     }
-    public function testBloc5MGiven46ShouldReturnYYRYYRYYR00(){
+    public function testBloc5MGiven46ShouldReturnYYRYYRYYROO(){
         //Arrange
         $BerlinClock= new BerlinClock();
         //Act
         $actual = $BerlinClock->blocDe5Min("46");
         //Assert
-        $this->assertEquals("YYRYYRYYR00",$actual);
+        $this->assertEquals("YYRYYRYYROO",$actual);
     }
 
     public function testSimpleHeureGiven19ReturnRRRR(){
@@ -65,13 +65,13 @@ class BerlinClockTest extends TestCase{
         //Assert
         $this->assertEquals("RRRR", $actual);
     }
-    public function testSimpleHeureGiven16ReturnR000(){
+    public function testSimpleHeureGiven16ReturnROOO(){
         //Arrange
         $BerlinClock= new BerlinClock();
         //Act
         $actual = $BerlinClock->heureSimple("16");
         //Assert
-        $this->assertEquals("R000", $actual);
+        $this->assertEquals("ROOO", $actual);
     }
 
     public function testSimpleHeureGiven18ReturnRRR0(){
@@ -80,7 +80,7 @@ class BerlinClockTest extends TestCase{
         //Act
         $actual = $BerlinClock->heureSimple("18");
         //Assert
-        $this->assertEquals("RRR0", $actual);
+        $this->assertEquals("RRRO", $actual);
     }
 
     public function testBloc5HeuresGiven15ReturnRRRO(){
