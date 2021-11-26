@@ -42,7 +42,7 @@
         }
 
         public function secondes(string $nbSecondes) : string{
-            if($nbSecondes % 2 == "1") return "X";
+            if($nbSecondes % 2 == "1") return "O";
             return "R";
         }
 
