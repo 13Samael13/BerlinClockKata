@@ -129,6 +129,14 @@ class BerlinClockTest extends TestCase{
         $this->assertEquals("OOOO", $actual);
     }
 
+    public function testHeureSimpleGiven1ShouldReturnROOO(){
+        $BerlinClock= new BerlinClock();
+
+        $actual = $BerlinClock->heureSimple("1");
+
+        $this->assertEquals("ROOO", $actual);
+    }
+
     public function testSimpleHeureGiven19ReturnRRRR(){
         //Arrange
         $BerlinClock= new BerlinClock();
