@@ -64,9 +64,24 @@ class BerlinClockTest extends TestCase{
         $actual = $BerlinClock->heureSimple("19");
         //Assert
         $this->assertEquals("RRRR", $actual);
-
+    }
+    public function testSimpleHeureGiven16ReturnR000(){
+        //Arrange
+        $BerlinClock= new BerlinClock();
+        //Act
+        $actual = $BerlinClock->heureSimple("16");
+        //Assert
+        $this->assertEquals("R000", $actual);
     }
 
+    public function testSimpleHeureGiven18ReturnRRR0(){
+        //Arrange
+        $BerlinClock= new BerlinClock();
+        //Act
+        $actual = $BerlinClock->heureSimple("18");
+        //Assert
+        $this->assertEquals("RRR0", $actual);
+    }
 
 
 
