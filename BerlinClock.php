@@ -46,5 +46,19 @@
             return "R";
         }
 
+        public function afficherHeure(string $heure) : string{
+            $divisionHeureTab = explode(":",$heure);
+            $nbrHeure = (string) $divisionHeureTab[0];
+            $nbrMinutes = (string) $divisionHeureTab[1];
+            $nbrSecondes = (string) $divisionHeureTab[2];
+            $affichageHeure = "";
+            $affichageHeure = $affichageHeure . $this->secondes($nbrSecondes) . "\n";
+            $affichageHeure = $affichageHeure . $this->bloc5Heures($nbrHeure) . "\n";
+            $affichageHeure = $affichageHeure . $this->heureSimple($nbrHeure) . "\n";
+            $affichageHeure = $affichageHeure . $this->blocDe5Min($nbrMinutes) . "\n";
+            $affichageHeure = $affichageHeure . $this->minutesSimple($nbrMinutes);
+            return $affichageHeure;
+        }
+
 
     }
