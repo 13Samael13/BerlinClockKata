@@ -83,6 +83,15 @@ class BerlinClockTest extends TestCase{
         $this->assertEquals("RRR0", $actual);
     }
 
+    public function testBloc5HeuresGiven15ReturnRRRO(){
+        //Arrange
+        $BerlinClock= new BerlinClock();
+        //Act
+        $actual = $BerlinClock->bloc5Heures("15");
+        //Assert
+        $this->assertEquals("RRRO", $actual);
+    }
+
 
 
 
