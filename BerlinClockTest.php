@@ -39,7 +39,7 @@ class BerlinClockTest extends TestCase{
         $this->assertEquals("YYYY", $actual);
     }
 
-    public function testMinutesSimpleGiven5ShouldReturnXXXX(){
+    public function testMinutesSimpleGiven5ShouldReturnOOOO(){
         $BerlinClock = new BerlinClock();
 
         $actual = $BerlinClock->minutesSimple("5");
@@ -47,7 +47,7 @@ class BerlinClockTest extends TestCase{
         $this->assertEquals("OOOO", $actual);
     }
 
-    public function testMinutesSimpleGiven6ShouldReturnYXXX(){
+    public function testMinutesSimpleGiven6ShouldReturnYOOO(){
         $BerlinClock = new BerlinClock();
 
         $actual = $BerlinClock->minutesSimple("6");
@@ -55,12 +55,12 @@ class BerlinClockTest extends TestCase{
         $this->assertEquals("YOOO", $actual);
     }
 
-    public function testBlocDe5MinGiven0ShouldReturnXXXXXXXXXXX(){
+    public function testBlocDe5MinGiven0ShouldReturnOOOOOOOOOOO(){
         $BerlinClock = new BerlinClock();
 
         $actual = $BerlinClock->blocDe5Min("0");
 
-        $this->assertEquals("XXXXXXXXXXX", $actual);
+        $this->assertEquals("OOOOOOOOOOO", $actual);
     }
 
     public function testBloc5MGiven5ShouldReturnYOOOOOOOOOOO(){
